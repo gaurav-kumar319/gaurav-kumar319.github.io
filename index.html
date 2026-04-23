@@ -3,12 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Gaurav Kumar | Portfolio</title>
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #0f172a;
   color: #e2e8f0;
 }
@@ -16,21 +20,41 @@ body {
 /* HERO */
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
   background: linear-gradient(135deg, #4f46e5, #06b6d4);
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 52px;
   margin: 0;
 }
 
 .hero p {
   font-size: 18px;
   margin-top: 10px;
+  opacity: 0.9;
 }
 
-/* SECTION */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background: #38bdf8;
+  color: black;
+}
+
+.btn-outline {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+/* SECTIONS */
 section {
   max-width: 1000px;
   margin: auto;
@@ -39,8 +63,12 @@ section {
 
 h2 {
   color: #38bdf8;
-  font-size: 28px;
   margin-bottom: 20px;
+}
+
+/* ABOUT */
+.about p {
+  line-height: 1.6;
 }
 
 /* SKILLS */
@@ -57,10 +85,10 @@ h2 {
   font-size: 14px;
 }
 
-/* PROJECT CARDS */
+/* PROJECTS */
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
 
@@ -91,25 +119,33 @@ footer {
   text-align: center;
   padding: 20px;
   background: #020617;
-  margin-top: 50px;
 }
 </style>
 </head>
 
 <body>
 
+<!-- HERO -->
 <div class="hero">
-  <h1>Gaurav Kumar</h1>
+  <h1>Gaurav Kumar 👋</h1>
   <p>Full Stack Developer | MERN Stack | Fresher</p>
+
+  <div style="margin-top:20px;">
+    <a href="#projects" class="btn btn-primary">View Projects</a>
+    <a href="https://github.com/gaurav-kumar319" class="btn btn-outline">GitHub</a>
+  </div>
 </div>
 
-<section>
+<!-- ABOUT -->
+<section class="about">
   <h2>About Me</h2>
   <p>
-    I am a passionate Full Stack Developer with strong interest in building scalable web applications using MERN stack. I enjoy solving real-world problems and learning new technologies.
+    I am a B.Tech Electrical Engineering graduate with strong interest in Full Stack Development.
+    I specialize in building scalable web applications using MERN stack and enjoy solving real-world problems.
   </p>
 </section>
 
+<!-- SKILLS -->
 <section>
   <h2>Skills</h2>
   <div class="skills">
@@ -124,32 +160,34 @@ footer {
   </div>
 </section>
 
-<section>
+<!-- PROJECTS -->
+<section id="projects">
   <h2>Projects</h2>
 
   <div class="projects">
 
     <div class="card">
       <h3>E-Commerce App</h3>
-      <p>Full-stack MERN application with authentication, cart, and orders.</p>
-      <a href="#">GitHub Link</a>
+      <p>Full-stack MERN application with authentication, cart & orders.</p>
+      <a href="https://github.com/gaurav-kumar319">View Project</a>
     </div>
 
     <div class="card">
       <h3>Job Dashboard</h3>
-      <p>React app with API integration and filtering system.</p>
-      <a href="#">GitHub Link</a>
+      <p>React app with API integration, filtering and saved jobs feature.</p>
+      <a href="https://github.com/gaurav-kumar319">View Project</a>
     </div>
 
     <div class="card">
       <h3>To-Do App</h3>
-      <p>Task management app with React hooks and local storage.</p>
-      <a href="#">GitHub Link</a>
+      <p>Task management app using React hooks and local storage.</p>
+      <a href="https://github.com/gaurav-kumar319">View Project</a>
     </div>
 
   </div>
 </section>
 
+<!-- CONTACT -->
 <section class="contact">
   <h2>Contact</h2>
   <p>Email: gauravpal3082004@gmail.com</p>
